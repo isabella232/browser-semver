@@ -1,7 +1,7 @@
 'use strict'
 const t = require('tap')
 
-const thisVersion = require('../../package.json').version
+const thisVersion =  require('../src/../package.json').version
 t.cleanSnapshot = str => str.split(thisVersion).join('@@VERSION@@')
 
 const spawn = require('child_process').spawn

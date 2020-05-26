@@ -1,9 +1,9 @@
 const { test } = require('tap')
-const SemVer = require('../../classes/semver')
-const increments = require('../fixtures/increments.js')
-const comparisons = require('../fixtures/comparisons.js')
-const equality = require('../fixtures/equality.js')
-const invalidVersions = require('../fixtures/invalid-versions')
+const SemVer =  require('../src/../classes/semver')
+const increments =  require('../src/fixtures/increments.js')
+const comparisons =  require('../src/fixtures/comparisons.js')
+const equality =  require('../src/fixtures/equality.js')
+const invalidVersions =  require('../src/fixtures/invalid-versions')
 
 test('comparisons', t => {
   t.plan(comparisons.length)

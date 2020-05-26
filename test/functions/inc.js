@@ -1,7 +1,7 @@
 const { test } = require('tap')
-const inc = require('../../functions/inc')
-const parse = require('../../functions/parse')
-const increments = require('../fixtures/increments.js')
+const inc =  require('../src/../functions/inc')
+const parse =  require('../src/../functions/parse')
+const increments =  require('../src/fixtures/increments.js')
 
 test('increment versions test', (t) => {
   increments.forEach(([pre, what, wanted, options, id]) => {

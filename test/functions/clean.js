@@ -1,5 +1,5 @@
 const { test } = require('tap')
-const clean = require('../../functions/clean')
+const clean =  require('../src/../functions/clean')
 
 test('clean tests', (t) => {
   // [range, version]

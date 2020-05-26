@@ -1,7 +1,7 @@
 const { test } = require('tap')
-const lt = require('../../functions/lt')
-const comparisons = require('../fixtures/comparisons.js')
-const equality = require('../fixtures/equality.js')
+const lt =  require('../src/../functions/lt')
+const comparisons =  require('../src/fixtures/comparisons.js')
+const equality =  require('../src/fixtures/equality.js')
 
 test('comparison tests', t => {
   t.plan(comparisons.length)

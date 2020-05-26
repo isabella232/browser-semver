@@ -1,6 +1,6 @@
 const { test } = require('tap')
-const validRange = require('../../ranges/valid')
-const rangeParse = require('../fixtures/range-parse.js')
+const validRange =  require('../src/../ranges/valid')
+const rangeParse =  require('../src/fixtures/range-parse.js')
 
 test('valid range test', (t) => {
   // validRange(range) -> result

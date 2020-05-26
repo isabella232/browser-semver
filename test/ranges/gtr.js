@@ -1,7 +1,7 @@
 const { test } = require('tap')
-const gtr = require('../../ranges/gtr')
-const versionGtr = require('../fixtures/version-gt-range')
-const versionNotGtr = require('../fixtures/version-not-gt-range')
+const gtr =  require('../src/../ranges/gtr')
+const versionGtr =  require('../src/fixtures/version-gt-range')
+const versionNotGtr =  require('../src/fixtures/version-not-gt-range')
 
 test('gtr tests', (t) => {
   // [range, version, options]

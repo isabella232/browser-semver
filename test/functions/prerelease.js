@@ -1,5 +1,5 @@
 const { test } = require('tap')
-const prerelease = require('../../functions/prerelease')
+const prerelease =  require('../src/../functions/prerelease')
 
 test('prerelease', (t) => {
   // [prereleaseParts, version, loose]

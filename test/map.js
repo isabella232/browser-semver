@@ -23,7 +23,7 @@ const root = resolve(__dirname, '..')
 const sut = find(root)
 const tests = find(root + '/test')
 t.strictSame(sut, tests, 'test files should match system files')
-const map = require('../map.js')
+const map =  require('../src/map.js')
 
 for (const testFile of tests) {
   t.test(testFile, t => {

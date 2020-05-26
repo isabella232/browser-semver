@@ -33,4 +33,4 @@ const main = () => {
   t.end()
 }
 
-if (process.argv[2] === 'child') { require('../../internal/debug')('hello, world') } else { main() }
+if (process.argv[2] === 'child') {  require('../src/../internal/debug')('hello, world') } else { main() }
