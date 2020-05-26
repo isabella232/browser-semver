@@ -3,3 +3,12 @@
 coverage/
 .nyc_output/
 .idea
+/index.js
+/map.js
+/preload.js
+/bin/semver.js
+/classes/*
+/functions/*
+/internal/*
+/ranges/*
+!/src/**/*
