@@ -6,7 +6,7 @@
   "scripts": {
     "test": "tap",
     "snap": "tap",
-    "prepare": "babel src --out-dir .",
+    "prepare": "babel src --out-dir . && chmod 777 ./bin/semver.js",
     "preversion": "npm test",
     "postversion": "npm publish",
     "postpublish": "git push origin --follow-tags"
@@ -39,5 +39,9 @@
   },
   "engines": {
     "node": ">=10"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "find-up": "^4.1.0"
   }
 }

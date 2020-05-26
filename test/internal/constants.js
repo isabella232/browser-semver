@@ -1,5 +1,5 @@
 const t = require('tap')
-const constants =  require('../src/../internal/constants')
+const constants =  require('../../src/internal/constants')
 
 t.match(constants, {
   SEMVER_SPEC_VERSION: String,

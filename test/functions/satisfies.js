@@ -1,7 +1,7 @@
 const { test } = require('tap')
-const satisfies =  require('../src/../functions/satisfies')
-const rangeInclude =  require('../src/fixtures/range-include.js')
-const rangeExclude =  require('../src/fixtures/range-exclude.js')
+const satisfies =  require('../../src/functions/satisfies')
+const rangeInclude =  require('../fixtures/range-include.js')
+const rangeExclude =  require('../fixtures/range-exclude.js')
 test('range tests', t => {
   t.plan(rangeInclude.length)
   rangeInclude.forEach(([range, ver, options]) =>

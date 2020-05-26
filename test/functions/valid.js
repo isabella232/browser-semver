@@ -1,7 +1,7 @@
 const t = require('tap')
-const valid =  require('../src/../functions/valid')
-const SemVer =  require('../src/../classes/semver')
-const invalidVersions =  require('../src/fixtures/invalid-versions')
+const valid =  require('../../src/functions/valid')
+const SemVer =  require('../../src/classes/semver')
+const invalidVersions =  require('../fixtures/invalid-versions')
 
 t.test('returns null instead of throwing when presented with garbage', t => {
   t.plan(invalidVersions.length)

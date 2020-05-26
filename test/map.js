@@ -1,11 +1,11 @@
 const t = require('tap')
 
 // ensure that the coverage map maps all coverage
-const ignore = ['.git', '.github', 'node_modules', 'coverage', 'tap-snapshots', 'test', 'fixtures']
+const ignore = ['.git', '.github', 'node_modules', 'coverage', 'tap-snapshots', 'test', 'fixtures', 'src', '.babelrc.js']
 const {statSync, readdirSync} = require('fs')
 const find = (folder, set = [], root = true) => {
   const ent = readdirSync(folder)
-  set.push(...ent.filter(f => /\.m?js$/.test(f)).map(f => folder + '/' + f))
+  set.push(...ent.filter(f => !ignore.includes(f) && /\.m?js$/.test(f)).map(f => folder + '/' + f))
   for (const f of ent.filter(f => !ignore.includes(f) && !/\.m?js$/.test(f))) {
     if (statSync(folder + '/' + f).isDirectory())
       find(folder + '/' + f, set, false)
@@ -22,8 +22,9 @@ const root = resolve(__dirname, '..')
 
 const sut = find(root)
 const tests = find(root + '/test')
+
 t.strictSame(sut, tests, 'test files should match system files')
-const map =  require('../src/map.js')
+const map =  require('../map.js')
 
 for (const testFile of tests) {
   t.test(testFile, t => {

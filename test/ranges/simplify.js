@@ -1,5 +1,5 @@
-const simplify =  require('../src/../ranges/simplify.js')
-const Range =  require('../src/../classes/range.js')
+const simplify =  require('../../src/ranges/simplify.js')
+const Range =  require('../../src/classes/range.js')
 const t = require('tap')
 const versions = [
   '1.0.0',

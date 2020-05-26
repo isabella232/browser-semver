@@ -10,8 +10,8 @@ let versions = []
 const range = []
 
 let inc = null
-
-const version = require('../../package.json').version
+const findUp = require('find-up');
+const version = require(findUp.sync('package.json')).version
 
 let loose = false
 

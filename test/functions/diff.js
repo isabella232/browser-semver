@@ -1,5 +1,5 @@
 const { test } = require('tap')
-const diff =  require('../src/../functions/diff')
+const diff =  require('../../src/functions/diff')
 
 test('diff versions test', (t) => {
 //  [version1, version2, result]

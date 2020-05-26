@@ -1,11 +1,11 @@
 const { test } = require('tap')
-const Range =  require('../src/../classes/range')
-const Comparator =  require('../src/../classes/comparator')
-const rangeIntersection =  require('../src/fixtures/range-intersection.js')
+const Range =  require('../../src/classes/range')
+const Comparator =  require('../../src/classes/comparator')
+const rangeIntersection =  require('../fixtures/range-intersection.js')
 
-const rangeInclude =  require('../src/fixtures/range-include.js')
-const rangeExclude =  require('../src/fixtures/range-exclude.js')
-const rangeParse =  require('../src/fixtures/range-parse.js')
+const rangeInclude =  require('../fixtures/range-include.js')
+const rangeExclude =  require('../fixtures/range-exclude.js')
+const rangeParse =  require('../fixtures/range-parse.js')
 
 test('range tests', t => {
   t.plan(rangeInclude.length)

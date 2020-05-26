@@ -1,6 +1,6 @@
 const { test } = require('tap')
-const { src, re } =  require('../src/../internal/re')
-const semver =  require('../src/../')
+const { src, re } =  require('../../src/internal/re')
+const semver =  require('../../src/')
 
 test('has a list of src, re, and tokens', (t) => {
   t.match(Object.assign({}, semver), {

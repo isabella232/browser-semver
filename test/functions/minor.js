@@ -1,5 +1,5 @@
 const { test } = require('tap')
-const minor =  require('../src/../functions/minor')
+const minor =  require('../../src/functions/minor')
 
 test('minor tests', (t) => {
   // [range, version]

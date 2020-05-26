@@ -1,9 +1,9 @@
 const { test } = require('tap')
-const outside =  require('../src/../ranges/outside')
-const versionGtr =  require('../src/fixtures/version-gt-range')
-const versionNotGtr =  require('../src/fixtures/version-not-gt-range')
-const versionLtr =  require('../src/fixtures/version-lt-range')
-const versionNotLtr =  require('../src/fixtures/version-not-lt-range')
+const outside =  require('../../src/ranges/outside')
+const versionGtr =  require('../fixtures/version-gt-range')
+const versionNotGtr =  require('../fixtures/version-not-gt-range')
+const versionLtr =  require('../fixtures/version-lt-range')
+const versionNotLtr =  require('../fixtures/version-not-lt-range')
 
 test('gtr tests', (t) => {
   // [range, version, options]

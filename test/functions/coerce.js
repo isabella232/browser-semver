@@ -1,7 +1,7 @@
 const { test } = require('tap')
-const coerce =  require('../src/../functions/coerce')
-const parse =  require('../src/../functions/parse')
-const valid =  require('../src/../functions/valid')
+const coerce =  require('../../src/functions/coerce')
+const parse =  require('../../src/functions/parse')
+const valid =  require('../../src/functions/valid')
 
 test('coerce tests', (t) => {
   // Expected to be null (cannot be coerced).

@@ -1,5 +1,5 @@
 const { test } = require('tap')
-const minVersion =  require('../src/../ranges/min-version')
+const minVersion =  require('../../src/ranges/min-version')
 
 test('minimum version in range tests', (t) => {
   // [range, minimum, loose]
