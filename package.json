@@ -1,7 +1,7 @@
 {
-  "name": "semver",
+  "name": "@storybook/semver",
   "version": "7.3.2",
-  "description": "The semantic version parser used by npm.",
+  "description": "The semantic version parser used by npm for browser.",
   "main": "index.js",
   "scripts": {
     "test": "tap",
@@ -19,7 +19,7 @@
     "tap": "^14.10.7"
   },
   "license": "ISC",
-  "repository": "https://github.com/npm/node-semver",
+  "repository": "https://github.com/storybookjs/browser-semver",
   "bin": {
     "semver": "./bin/semver.js"
   },

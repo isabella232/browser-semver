@@ -1,0 +1,8 @@
+/src/*
+.github/*
+.vscode/*
+/node_modules
+/tests
+/tap-snapshots
+yarn.lock
+map.js
